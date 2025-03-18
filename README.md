@@ -1,12 +1,12 @@
 # Design System
 
 ## Components
-- [ ] Text
-- [ ] Heading
-- [ ] Box
-- [ ] Button
-- [ ] TextInput
+- [x] Text
+- [x] Heading
+- [x] Box
+- [x] Button
+- [x] TextInput
 - [ ] TextArea
 - [ ] Checkbox
-- [ ] Avatar
+- [x] Avatar
 - [ ] MultiStep
