@@ -23,14 +23,14 @@ export const Prefix = styled('span', {
   fontFamily: '$default',
   fontSize: '$sm',
   color: '$gray400',
-  fontWeight: 'regular'
+  fontWeight: '$regular'
 })
 
 export const Input = styled('input', {
   fontFamily: '$default',
   fontSize: '$sm',
   color: '$white',
-  fontWeight: 'regular',
+  fontWeight: '$regular',
   background: 'transparent',
   border: 0,
   width: '100%',
