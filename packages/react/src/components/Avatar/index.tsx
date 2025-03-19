@@ -15,3 +15,5 @@ export function Avatar() {
 }
 
 export interface AvatarProps extends ComponentProps<typeof AvatarImage> {}
+
+Avatar.displayName = 'Avatar'
