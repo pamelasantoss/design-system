@@ -1,6 +1,7 @@
 # Design System
 
 ## Components
+
 - [x] Text
 - [x] Heading
 - [x] Box
@@ -9,4 +10,4 @@
 - [x] TextArea
 - [x] Checkbox
 - [x] Avatar
-- [ ] MultiStep
+- [x] MultiStep
