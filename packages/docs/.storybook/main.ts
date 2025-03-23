@@ -26,5 +26,9 @@ const config: StorybookConfig = {
     autodocs: true,
     defaultName: "Documentation",
   },
+  viteFinal: (config) => {
+    config.base = "/design-system/";
+    return config;
+  },
 };
 export default config;
