@@ -1,6 +1,6 @@
 {
-  "name": "@ignite-ui/react",
-  "version": "1.0.0",
+  "name": "@pamela-ui/react",
+  "version": "3.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -13,9 +13,9 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@pamela-ui/eslint-config": "*",
+    "@pamela-ui/tokens": "*",
+    "@pamela-ui/ts-config": "*",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "react": "^19.0.0",

@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from "@storybook/react";
-import { Button, ButtonProps } from "@ignite-ui/react";
+import { Button, ButtonProps } from "@pamela-ui/react";
 import { ArrowRight } from "phosphor-react";
 
 export default {
@@ -7,32 +7,32 @@ export default {
   component: Button,
   args: {
     children: "Send",
-    variant: 'primary',
-    size: 'sm',
-    disabled: false
+    variant: "primary",
+    size: "sm",
+    disabled: false,
   },
   argTypes: {
     variant: {
-      options: ['primary', 'secondary', 'tertiary'],
+      options: ["primary", "secondary", "tertiary"],
       control: {
-        type: 'inline-radio'
-      }
+        type: "inline-radio",
+      },
     },
     size: {
-      options: ['sm', 'md'],
+      options: ["sm", "md"],
       control: {
-        type: 'inline-radio'
-      }
+        type: "inline-radio",
+      },
     },
     disabled: {
       control: {
-        type: 'boolean'
-      }
+        type: "boolean",
+      },
     },
     onClick: {
-      action: 'click'
-    }
-  }
+      action: "click",
+    },
+  },
 } as Meta<ButtonProps>;
 
 export const Primary: StoryObj<ButtonProps> = {};

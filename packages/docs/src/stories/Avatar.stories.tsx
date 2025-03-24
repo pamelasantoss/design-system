@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from "@storybook/react";
-import { Avatar, AvatarProps } from "@ignite-ui/react";
+import { Avatar, AvatarProps } from "@pamela-ui/react";
 
 export default {
   title: "Data display/Avatar",
@@ -11,10 +11,10 @@ export default {
   argTypes: {
     src: {
       control: {
-        type: 'text'
-      }
-    }
-  }
+        type: "text",
+      },
+    },
+  },
 } as Meta<AvatarProps>;
 
 export const Primary: StoryObj<AvatarProps> = {};

@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@pamela-ui/docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,9 @@
     "lint": "eslint src/**/*.ts* --fix"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
+    "@pamela-ui/eslint-config": "*",
+    "@pamela-ui/react": "*",
+    "@pamela-ui/tokens": "*",
     "phosphor-react": "^1.4.1",
     "polished": "^4.3.1",
     "react": "^19.0.0",
