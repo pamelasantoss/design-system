@@ -1,8 +1,7 @@
 {
   "name": "@pamela-ui/eslint-config",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "private": true,
   "main": "index.js",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
