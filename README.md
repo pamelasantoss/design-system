@@ -11,3 +11,9 @@
 - [x] Checkbox
 - [x] Avatar
 - [x] MultiStep
+
+---
+
+npm run changeset
+npm run version-packages
+git commit
