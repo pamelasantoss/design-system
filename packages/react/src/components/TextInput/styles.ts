@@ -24,13 +24,13 @@ export const TextInputContainer = styled('div', {
       },
       md: {
         padding: '$3 $4',
-      }
-    }
+      },
+    },
   },
 
   defaultVariants: {
-    size: 'md'
-  }
+    size: 'md',
+  },
 })
 
 export const Prefix = styled('span', {
