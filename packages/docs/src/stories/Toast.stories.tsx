@@ -1,6 +1,5 @@
 import type { StoryObj, Meta } from "@storybook/react";
-import { Button, Toast, ToastProps } from "@pamela-ui/react";
-import { useState } from "react";
+import { Button, Toast, ToastProps, useToast } from "@pamela-ui/react";
 
 export default {
   title: "Feedback/Toast",
@@ -11,16 +10,27 @@ export default {
   },
   decorators: [
     (Story) => {
-      const [teste, setTeste] = useState(false);
-
       return (
-        <>
-          <Button onClick={() => setTeste(true)}>Click here</Button>
-          {teste && Story()}
-        </>
-      );
-    },
-  ],
+        <ToastExample />
+      )
+    }
+  ]
 } as Meta<ToastProps>;
+
+const ToastExample = () => {
+  const { openToast, setOpenToast, handleToast } = useToast()
+
+  return (
+    <>
+      <Button onClick={handleToast}>Click here</Button>
+      <Toast
+        title="Teste"
+        description="Teste 2"
+        open={openToast}
+        setOpen={setOpenToast}
+      />
+    </>
+  )
+}
 
 export const Primary: StoryObj<ToastProps> = {};
