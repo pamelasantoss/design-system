@@ -4,7 +4,7 @@ export const useToast = () => {
   const [openToast, setOpenToast] = useState(false)
   const timerRef = useRef(0)
 
-  const handleToast = () => {
+  const showToast = () => {
     setOpenToast(false)
     window.clearTimeout(timerRef.current)
     timerRef.current = window.setTimeout(() => {
@@ -19,6 +19,6 @@ export const useToast = () => {
   return {
     openToast,
     setOpenToast,
-    handleToast
+    showToast
   }
 }

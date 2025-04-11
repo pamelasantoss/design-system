@@ -7,25 +7,19 @@ export default {
   args: {
     title: "Toast title",
     description: "Toast description!",
+    duration: 3000,
+    closeButton: true
   },
-  decorators: [
-    (Story) => {
-      return (
-        <ToastExample />
-      )
-    }
-  ]
 } as Meta<ToastProps>;
 
-const ToastExample = () => {
-  const { openToast, setOpenToast, handleToast } = useToast()
+const ToastExample = (args: ToastProps) => {
+  const { openToast, setOpenToast, showToast } = useToast()
 
   return (
     <>
-      <Button onClick={handleToast}>Click here</Button>
+      <Button onClick={showToast}>Click here</Button>
       <Toast
-        title="Teste"
-        description="Teste 2"
+        {...args}
         open={openToast}
         setOpen={setOpenToast}
       />
@@ -33,4 +27,22 @@ const ToastExample = () => {
   )
 }
 
-export const Primary: StoryObj<ToastProps> = {};
+export const Primary: StoryObj<ToastProps> = {
+  render: (args) => <ToastExample {...args} />,
+  parameters: {
+    docs: {
+      source: {
+        code: `
+          <Toast
+  title="Toast title"
+  description="Toast description!"
+  open={true}
+  setOpen={setOpen}
+/>
+        `,
+        language: 'tsx',
+        type: 'code'
+      }
+    }
+  }
+};

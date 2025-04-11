@@ -5,21 +5,20 @@ import { X } from 'phosphor-react'
 import { Heading } from '../Heading'
 import { Text } from '../Text'
 import { Button } from '../Button'
-import { useToast } from '../../hooks/useToast'
 
 export interface ToastProps extends ComponentProps<typeof ToastContainer> {
   title: string
   description?: string
+  duration?: number
+  closeButton?: boolean
   open: boolean
   setOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export function Toast({ title, description, open, setOpen, ...props }: ToastProps) {
-  // const { openToast, setOpenToast } = useToast()
-
+export function Toast({ title, description, duration = 2000, closeButton = true, open, setOpen, ...props }: ToastProps) {
   return (
     <ToastComponent.Provider swipeDirection="right">
-      <ToastContainer {...props} open={open} onOpenChange={setOpen} duration={2000}>
+      <ToastContainer {...props} open={open} onOpenChange={setOpen} duration={duration}>
         <ToastTitle asChild>
           <Heading size="sm">{title}</Heading>
         </ToastTitle>
@@ -28,11 +27,13 @@ export function Toast({ title, description, open, setOpen, ...props }: ToastProp
             <Text size="sm">{description}</Text>
           </ToastDescription>
         )}
-        <ToastComponent.Close aria-label="Close" asChild>
-          <Button variant="tertiary">
-            <X weight="light" size={20} />
-          </Button>
-        </ToastComponent.Close>
+        {closeButton && (
+          <ToastComponent.Close aria-label="Close" asChild>
+            <Button variant="tertiary" style={{ position: 'absolute', top: 10, right: 10, padding: 0, minWidth: 20, height: 20 }}>
+              <X weight="light" size={20} />
+            </Button>
+          </ToastComponent.Close>
+        )}
       </ToastContainer>
       <ToastViewport />
     </ToastComponent.Provider>
