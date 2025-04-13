@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from 'react'
 
 export const useToast = () => {
   const [openToast, setOpenToast] = useState(false)
@@ -19,6 +19,6 @@ export const useToast = () => {
   return {
     openToast,
     setOpenToast,
-    showToast
+    showToast,
   }
 }

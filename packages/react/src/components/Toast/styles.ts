@@ -3,11 +3,11 @@ import { keyframes, styled } from '../../styles'
 
 const hide = keyframes({
   from: {
-    opacity: 1
+    opacity: 1,
   },
   to: {
-    opacity: 0
-  }
+    opacity: 0,
+  },
 })
 
 const slideIn = keyframes({
@@ -41,7 +41,7 @@ export const ToastViewport = styled(Toast.Viewport, {
   margin: 0,
   listStyle: 'none',
   zIndex: 2147483647,
-  outline: 'none'
+  outline: 'none',
 })
 
 export const ToastContainer = styled(Toast.Root, {
@@ -56,35 +56,35 @@ export const ToastContainer = styled(Toast.Root, {
   position: 'relative',
 
   '&[data-state="open"]': {
-    animation: `${slideIn} 150ms cubic-bezier(0.16, 1, 0.3, 1)`
+    animation: `${slideIn} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
   },
 
   '&[data-state="closed"]': {
-    animation: `${hide} 100ms ease-in`
+    animation: `${hide} 100ms ease-in`,
   },
-  
+
   '&[data-state="move"]': {
-    transform: 'translateX(var(--radix-toast-swipe-move-x))'
+    transform: 'translateX(var(--radix-toast-swipe-move-x))',
   },
 
   '&[data-state="cancel"]': {
     transform: 'translateX(0)',
-    transition: 'transform 200ms ease-out'
+    transition: 'transform 200ms ease-out',
   },
 
   '&[data-state="end"]': {
-    animation: `${swipeOut} 100ms ease-out`
+    animation: `${swipeOut} 100ms ease-out`,
   },
 })
 
 export const ToastTitle = styled(Toast.Title, {
   fontSize: '$xl',
   fontWeight: '$bold',
-  color: '$white'
+  color: '$white',
 })
 
 export const ToastDescription = styled(Toast.Description, {
   color: '$gray200',
   fontSize: '$sm',
-  marginTop: '$2'
+  marginTop: '$2',
 })
