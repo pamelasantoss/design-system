@@ -1,5 +1,11 @@
 # @pamela-ui/react
 
+## 3.1.0
+
+### Minor Changes
+
+- Creating the Toast component
+
 ## 3.0.1
 
 ### Patch Changes
