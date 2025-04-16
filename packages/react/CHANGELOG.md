@@ -1,5 +1,11 @@
 # @pamela-ui/react
 
+## 3.2.2
+
+### Patch Changes
+
+- Add props to Avatar image
+
 ## 3.2.1
 
 ### Patch Changes
