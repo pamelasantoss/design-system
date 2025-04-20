@@ -1,8 +1,20 @@
 {
   "name": "@pamela-ui/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "index.js",
+  "homepage": "https://github.com/pamelasantoss/design-system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pamelasantoss/design-system/tree/main/packages/eslint-config"
+  },
+  "keywords": [
+    "code formatting",
+    "eslint config",
+    "design system"
+  ],
+  "author": "Pamela Santos",
+  "description": "",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "eslint": "^8.57.1"
