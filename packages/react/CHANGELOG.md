@@ -1,5 +1,11 @@
 # @pamela-ui/react
 
+## 3.2.3
+
+### Patch Changes
+
+- Update the readme files
+
 ## 3.2.2
 
 ### Patch Changes
