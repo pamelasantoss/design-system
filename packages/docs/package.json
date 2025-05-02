@@ -3,6 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/pamelasantoss/design-system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pamelasantoss/design-system/tree/main/packages/docs"
+  },
+  "author": "Pamela Santos",
+  "license": "MIT",
+  "description": "The Pamela UI Design System is a cohesive, reusable set of user interface components designed to make it easy to build consistent, scalable applications.",
+  "keywords": [
+    "components",
+    "design system components",
+    "design system storybook"
+  ],
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",

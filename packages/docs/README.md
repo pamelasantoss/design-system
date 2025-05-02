@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# Design System | Pamela UI Design System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### :bulb: Description
 
-Currently, two official plugins are available:
+The _Pamela UI Design System_ was developed as part of a study project. The _Pamela UI Design System_ is a cohesive, reusable set of user interface components designed to make it easy to build consistent, scalable applications. Built with design and development best practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a living project and is constantly changing, seeking to improve and add the most used components in different applications with their most different variations. The documentation is interactive, being able to see in advance the different scenarios that a given component can have.
 
-## Expanding the ESLint configuration
+### :rocket: Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Developed with [Storybook](https://storybook.js.org/docs), [React](https://react.dev/) and [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### :heavy_check_mark: How to edit and contribute
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- After cloning and installing dependencies, run `npm run dev` inside the `doc` folder.
+- All the live `components` is located on `stories` folder.
+- If you need to create a custom component to display a token or other component, you can create in the `components` folder.
+- Before committing, run `npm run lint` to fix formatting and ensure code consistency. And don't forget to test all the variants.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### :heavy_check_mark: What will you find in this package?
+
+| Component | Description                                                               |
+| --------- | ------------------------------------------------------------------------- |
+| Avatar    | Displays a user image via the `src` attribute or a fallback icon          |
+| Checkbox  | A custom checkbox with smooth transitions                                 |
+| MultiStep | A progress bar with customizable step count                               |
+| TextInput | A styled input field for text (more types coming soon)                    |
+| Toast     | A notification-style message that appears on the right side of the screen |
+| Tooltip   | Shows a description when hovering over an element                         |
+| Box       | A simple box with customizable background color                           |
+| Button    | Multiple button variants for different use cases                          |
+| Heading   | Different heading levels in a consistent design                           |
+| Text      | Text elements styled with the Design System’s fonts and sizes             |
+| TextArea  | A styled textarea with two available variants                             |
