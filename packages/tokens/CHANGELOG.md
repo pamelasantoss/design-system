@@ -1,5 +1,11 @@
 # @pamela-ui/tokens
 
+## 1.0.3
+
+### Patch Changes
+
+- Update a few dependencies
+
 ## 1.0.2
 
 ### Patch Changes

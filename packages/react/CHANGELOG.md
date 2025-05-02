@@ -1,5 +1,11 @@
 # @pamela-ui/react
 
+## 3.2.4
+
+### Patch Changes
+
+- Update a few dependencies
+
 ## 3.2.3
 
 ### Patch Changes

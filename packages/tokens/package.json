@@ -1,6 +1,6 @@
 {
   "name": "@pamela-ui/tokens",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -23,9 +23,9 @@
   "license": "MIT",
   "description": "It stores all the essential, reusable design values that help define a project's visual identity.",
   "devDependencies": {
-    "@pamela-ui/ts-config": "*",
     "@pamela-ui/eslint-config": "*",
+    "@pamela-ui/ts-config": "*",
     "tsup": "^8.4.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.3"
   }
 }
